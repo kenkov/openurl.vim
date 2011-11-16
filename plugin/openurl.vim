@@ -1,5 +1,4 @@
-" Copyright (c) 2010 Kenko Abe
-"
+" Copyright (c) 2010-2011 kenkov
 "
 " Summary
 " =======
@@ -29,8 +28,6 @@
 " example)
 " command AnotherOpenUrlName :call OpenUrl()
 "
-
-
 
 " define OpenUrl function
 function! s:OpenUrl()
