@@ -23,7 +23,7 @@
 " I set a command for OpenUrl function, such that
 "
 " command OpenUrl :call OpenUrl()
-" 
+"
 " You can change command name by changing above command name 'OpenUrl'.
 "
 " example)
@@ -33,15 +33,16 @@
 
 
 " define OpenUrl function
-function! OpenUrl()
+function! s:OpenUrl()
 python << EOM
-# coding=utf-8
+# coding:utf-8
 
 import vim
 import re
 import webbrowser
 
-re_obj = re.compile(r'http://[a-zA-Z0-9-./"#$%&\':?=_]+')
+re_obj = re.compile(r'(http|https)://[a-zA-Z0-9-./"#$%&\':?=_]+')
+#re_obj = re.compile(r'(http|https|ftp|ftps)://[a-zA-Z0-9-./"#$%&\':?=_]+')
 line = vim.current.line
 match_obj = re_obj.search(line)
 
@@ -55,6 +56,6 @@ except:
 EOM
 endfunction
 
-
+nnoremap <unique> <Plug>OpenUrl <SID>OpenUlr()
 " set a command for OpenUrl function
-command OpenUrl :call OpenUrl()
+command OpenUrl :call <SID>OpenUrl()
