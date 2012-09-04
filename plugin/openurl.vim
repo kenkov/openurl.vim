@@ -1,8 +1,26 @@
-" Copyright (c) 2010-2011 kenkov
+" copyright and license
+" ==============================
+"
+" Copyright (c) 2010-2012 Noriyuki ABE
+"
+" Permission is hereby granted, free of charge, to any person obtaining a copy of
+" this software and associated documentation files (the "Software"),
+" to deal in the Software without restriction, including without limitation the rights to use,
+" copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+" and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+" 
+" The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+" 
+" THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+" INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+" IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+" WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+" OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 "
 " Summary
 " =======
-" The OprnUrl function opens a url which is a first one in the line
+" This script enable you to open a url which is first one in the line in your
+" default browser.
 "
 " Require
 " =======
@@ -16,8 +34,6 @@
 "
 " You use ':OpenUrl' command in this line, 
 " then you can open http://aaa in a default web browser.
-"
-"
 "
 " I set a command for OpenUrl function, such that
 "
